@@ -9,6 +9,15 @@
 - This program only works on systems based on Debian
 - Debian / Mint / Ubuntu / All based
 
+## Requirements
+- GCC installed
+- sudo password set
+
+## How to use
+- cd linux-workspace/
+- gcc main.c -o main
+- ./main
+
 ## Follow Me
 [<img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" />](https://twitter.com/jairosilva2005)
 [<img src = "https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white">](https://www.instagram.com/jairo_nth/)
