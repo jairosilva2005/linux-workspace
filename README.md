@@ -14,6 +14,7 @@
 - sudo password set
 
 ## How to use
+- Clone / Download the repository on your machine
 - cd linux-workspace/
 - gcc main.c -o main
 - ./main
