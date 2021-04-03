@@ -15,7 +15,8 @@
 - cURL
 
 ## How to use
-- Clone / Download the repository on your machine
+- sudo apt install git
+- git clone
 - cd linux-workspace/
 - gcc main.c -o main
 - ./main
