@@ -16,7 +16,7 @@
 
 ## How to use
 - sudo apt install git
-- git clone
+- git clone https://github.com/jairosilva2005/linux-workspace.git
 - cd linux-workspace/
 - gcc main.c -o main
 - ./main
