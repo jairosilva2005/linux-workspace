@@ -12,6 +12,7 @@
 ## Requirements
 - GCC installed
 - sudo password set
+- Curl
 
 ## How to use
 - Clone / Download the repository on your machine
