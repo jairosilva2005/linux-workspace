@@ -6,9 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 void repositories();
-void InstallCode();
-void InstallSublime();
+void installCode();
+void installSublime();
 void installGimp();
+void linuxGuides();
+void installNode();
+void installHaskell();
 
 int main() {
 
@@ -21,7 +24,8 @@ int main() {
     printf("[2] -> Install Visual Studio Code\n");
     printf("[3] -> Install Sublime Text 3\n");
     printf("[4] -> Install Gimp image editor\n");
-    printf("[5] -> Exit\n");
+    printf("[5] -> Install Node.js (x64)\n");
+    printf("[6] -> Exit\n");
     printf("Select your option -> ");
     scanf("%i", &option);
 
@@ -30,15 +34,18 @@ int main() {
             repositories();
         break;
         case 2:
-            InstallCode();
+            installCode();
         break;
         case 3:
-            InstallSublime();
+            installSublime();
         break;
         case 4:
             installGimp();
         break;
         case 5:
+            installNode();
+        break;
+        case 6:
         		printf("Bye.");
         break;
         default:
@@ -85,14 +92,14 @@ void repositories() {
     }
 }
 
-void InstallCode() {
+void installCode() {
     system("clear");
     printf("Downloading and installing Visual Studio Code\n");
     system("bash ./data/visual_studio_code/install.sh");
     main();
 }
 
-void InstallSublime() {
+void installSublime() {
     system("clear");
     printf("Downloading and installing Sublime Text 3\n");
     system("bash ./data/sublime_text/gpgkey.sh");
@@ -117,5 +124,12 @@ void installGimp() {
     system("clear");
     printf("Installing Gimp image editor\n");
     system("bash ./data/gimp/install.sh");
+    main();
+}
+
+void installNode() {
+    system("clear");
+    printf("Instalando...");
+    system("bash ./data/node/install.sh");
     main();
 }
